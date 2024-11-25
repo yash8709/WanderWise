@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website Testimonials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .testimonial-section {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .testimonial-card {
+            background-color: #a882d4;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .testimonial-card .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .profile h3 {
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .profile p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .testimonial-content {
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="testimonial-section">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/50" alt="John Doe">
+                <div>
+                    <h3>John Doe</h3>
+                    <p>CEO, ABC Inc.</p>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <p>5 stars</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/50" alt="Jane Smith">
+                <div>
+                    <h3>Jane Smith</h3>
+                    <p>Freelance Travel Blogger</p>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <p>I love exploring new destinations, and this website has been my go-to for all my travel bookings. The user-friendly interface, competitive prices, and excellent customer service keep me coming back for more!</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/50" alt="David Johnson">
+                <div>
+                    <h3>David Johnson</h3>
+                    <p>Travel Enthusiast</p>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <p>Great experience using this platform for my recent vacation. The hotel recommendations were fantastic, and the flight options were convenient. Will definitely use it again for my next trip!</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card">
+            <div class="profile">
+                <img src="https://via.placeholder.com/50" alt="Sarah Lee">
+                <div>
+                    <h3>Sarah Lee</h3>
+                    <p>Frequent Traveler</p>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <p>I have tried many travel booking websites, but this one stands out for its comprehensive services and genuine user reviews. It helped me find the perfect accommodation and transportation options for my holiday. Thank you!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

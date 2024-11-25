@@ -1,0 +1,70 @@
+<!-- # Travel Website -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-decoration: underline;">WanderWise: Your Ultimate Travel Planner</h1>
+        <h2>Welcome to Travel Booking Portal</h2>
+        <h6 style="color: white;"><b style="text-decoration: underline;">Powered By IXIGO online booking</b></h6>
+        <nav>
+            <ul>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#flights">Flights</a></li>
+                <li><a href="#cabs">Train</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hotels">
+        <h2>Book Your Hotel</h2>
+        <form id="hotelForm">
+            <label for="hotelLocation" style="color: black;">Location:</label>
+            <input type="text" id="hotelLocation" required>
+            <label for="checkIn " style="color: black;">Check-in Date:</label>
+            <input type="date" id="checkIn" required>
+            <label for="checkOut" style="color: black;">Check-out Date:</label>
+            <input type="date" id="checkOut" required>
+            <button type="submit"> <a href="https://www.ixigo.com/hotels" target="_blank">Search Hotels</a></button>
+        </form>
+    </section>
+
+    <section id="flights">
+        <h2>Book Your Flight</h2>
+        <form id="flightForm">
+            <label for="departure" style="color: black;">Departure:</label>
+            <input type="text" id="departure" required>
+            <label for="destination" style="color: black;">Destination:</label>
+            <input type="text" id="destination" required>
+            <label for="flightDate" style="color: black;" >Date:</label>
+            <input type="date" id="flightDate" required>
+            <button type="submit"> <a href="https://www.ixigo.com/flights?utm_source=Google_Search&utm_medium=paid_search_google_sweet16&utm_campaign=Generic_Search_Desktop_Sept&gad_source=1&gclid=Cj0KCQiAouG5BhDBARIsAOc08RTAWxDPnMt-35RXjOybM1KhD8kD7Ju3dAYX-RavNngbcPoHJVLy9L0aAi_fEALw_wcB" target="_blank">Search Flights</a></button>
+        </form>
+    </section>
+
+    <section id="cabs">
+        <h2>Book Your Train Ticket</h2>
+        <form id="cabForm">
+            <label for="pickupLocation" style="color: black;">Starting Location:</label>
+            <input type="text" id="pickupLocation" required>
+            <label for="dropLocation" style="color: black;">Drop Location:</label>
+            <input type="text" id="dropLocation" required>
+            <label for="cabDate" style="color: black;">Date:</label>
+            <input type="date" id="cabDate" required>
+            <button type="submit"> <a href="https://www.ixigo.com/trains" target="_blank">Book Train Ticket</a></button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="book.js"></script>
+</body>
+</html>

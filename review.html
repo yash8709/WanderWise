@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review - Travel Website</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <h1 style="text-align: center;
+                text-decoration: underline;">
+
+    WanderWise: Your Ultimate Travel Planner</h1>
+    <h3 style="text-align: center;
+                text-decoration: underline;
+                color: whitesmoke;">Review and Feedback Portal</h3>
+    <div class="review-container">
+        <h2>Leave a Review</h2>
+        <form id="review-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Choose a rating</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" placeholder="Write your review here..." required></textarea>
+            </div>
+            <button type="submit" id="submit-btn">Submit Review</button>
+            <p id="feedback-message"></p>
+        </form>
+
+        <div class="reviews-section">
+            <h3>Reviews from Other Travelers</h3>
+            <div id="reviews-list">
+                <!-- Submitted reviews will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="review.js"></script>
+</body>
+</html>
